@@ -21,6 +21,7 @@ A pre-made template for quick-starting a kaboom project.
 - `testServer` starts the index.js file with nodemon (You can install nodemon with `npm i -g nodemon`)
 - `buildJs` bundles and minifies your javascript file.
 - `noMinifyJs` is the same as buildJs, but skips the minifying process.
+- `buildJsOnce` is just like buildJs, but without watch-mode.
 
 ### SETUP
 1. Use the template to create a new repository
@@ -29,4 +30,4 @@ A pre-made template for quick-starting a kaboom project.
 4. Edit dist/index.html or src/main.js
 5. Run the `buildJs` npm script and then run `runServer` to start hosting.
 
-*Additional info: The buildJs script is set to watch-mode. You only have to run it once and it will always bundle your javascript when you change something. It can also throw Javascript errors.*
+*Additional info: The buildJs script is set to watch-mode. You only have to run it once and it will always bundle your javascript when you change something. It can also throw Javascript errors. If you want to only build once, run the buildJsOnce script.*
